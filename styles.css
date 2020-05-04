@@ -1,0 +1,85 @@
+body {
+    background: url(img/scenery.jpg);
+    font-family: "Merriweather Sans", sans-serif;
+    background-repeat: no-repeat;
+    /*     background-size: cover; */
+}
+
+
+/* @media (max-width: 767px) {
+    body {
+        background: url(img/sanna\ lukas\ on\ Twitter.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background: url(img/scenery.jpg);
+    }
+} */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.container h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: floralwhite;
+    text-align: center;
+}
+
+.container .inputBox {
+    position: relative;
+}
+
+.container .inputBox input {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: floralwhite;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid floralwhite;
+    outline: none;
+    background: transparent;
+}
+
+.container .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2em;
+    padding-top: 10px;
+    color: floralwhite;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .8s;
+}
+
+.container .inputBox input:focus~label,
+.container .inputBox input:valid~label {
+    top: -22px;
+    left: 0;
+    color: #03a9f4;
+}
+
+.container input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: floralwhite;
+    background: #03a9f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
